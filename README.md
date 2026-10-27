@@ -1,9 +1,8 @@
 # tstack
 
-The agent skills I use every day, cleaned up so anyone can use them. They work
-in Claude Code and Codex. Some use [T3 Code](https://github.com/pingdotgg/t3code)
-features when they are available and fall back to native tools when they are
-not.
+The agent skills I use every day, cleaned up so anyone can use them. They need
+[T3 Code](https://github.com/pingdotgg/t3code) and run in its Claude Code and
+Codex harnesses.
 
 ## Skills
 
@@ -37,10 +36,8 @@ cp -R tstack/skills/* ~/.codex/skills/    # Codex
 ## Requirements
 
 - An authenticated [GitHub CLI](https://cli.github.com) (`gh`).
-- `python3` for `babysit-pr`'s `pr-wait` script.
 - `council` and `sol-loop` need subagents on other providers' models. T3 Code
-  does this with `delegate_task`. Otherwise you need a harness that can run
-  those models.
+  does this with `delegate_task`.
 
 ## Make them yours
 
